@@ -55,7 +55,7 @@ body{
 	background-color:#3E3E3E;
 	border-radius:6.25rem;
 }
-#buttonsell h5,#circule div h5,#search input{
+#buttonsell h5,#circule div h5{
 	font-family: IRANSans;
 	font-size:0.75rem;
 	color:white;
@@ -89,18 +89,23 @@ body{
 	font-weight: bold;
 }
 #search input{
-	height: 2.5rem;
-	border-radius: 6.25rem;
+	height: 40px;
+	border-radius: 100px;
 	border:1px solid #9D9D9D ;
 	width:100%;
+	font-family: IRANSans;
+	font-style: normal;
 	font-weight: normal;
+	font-size: 12px;
 	display: flex;
 	align-items: center;
 	text-align: right;
 
 }
 placeholder{
+
 	color: #7D7D7D;
+
 }
 #search input:focus {
 	outline: none;
@@ -248,6 +253,7 @@ h5{
 	display:flex;
 	justify-content: space-between;
 }
+
 .infoprod + div div:nth-child(2){
 	
 	margin-left: 4.5px;
