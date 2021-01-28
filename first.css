@@ -306,7 +306,7 @@ height:200px;
 	justify-content: flex-end;
 	height: 146.51px;
 	border-bottom: 3px solid  #E5E5E5;
-	height: 146px;
+	align-items:baseline;
 }
 #second > img{
 	width:5.1rem;
@@ -372,7 +372,7 @@ height:200px;
 }
 .sellc + div h5:nth-child(3){
 	position: absolute;
-	top:15px;
+	top:10px;
 	left:2px;
 }
 #pay2{
