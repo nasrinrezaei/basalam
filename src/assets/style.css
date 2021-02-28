@@ -7,17 +7,14 @@ body{
 	margin:0px;
 	padding:0px;
 	 box-sizing: border-box;
-	
 }
-#bakset,#head{
+#app,#head{
 	display: flex;
 	flex-direction: column;
 }
-#bakset{
+#app{
 	margin:auto;
-	width:22.5rem;
 	height:80.1rem;
-	align-items: space-between;
 }
 #head{
 	padding:0.4rem 0.6rem ;
@@ -36,7 +33,7 @@ body{
 #search{
 	height: 2.5rem;
 	position: relative;
-	padding: 0px 10px;
+	padding: 0rem  0.6rem;
 	margin-top:1rem;	
 } 
 #logo{
@@ -50,7 +47,7 @@ body{
 }
 #buttonsell{
 	margin-right:auto;
-	padding:0rem 0.6rem;
+	padding: 0rem  0.6rem;
 	height:2rem;
 	background-color:#3E3E3E;
 	border-radius:6.25rem;
@@ -89,23 +86,13 @@ body{
 	font-weight: bold;
 }
 #search input{
-	height: 40px;
-	border-radius: 100px;
+	height:2.5rem;
+	border-radius: 6rem;
 	border:1px solid #9D9D9D ;
 	width:100%;
 	font-family: IRANSans;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 12px;
-	display: flex;
-	align-items: center;
-	text-align: right;
-
-}
-placeholder{
-
-	color: #7D7D7D;
-
+	font-size:0.7rem;
+	padding:0rem  0.6rem;
 }
 #search input:focus {
 	outline: none;
@@ -114,6 +101,9 @@ placeholder{
 	position: absolute;
 	top:9.98px;
 	left:17.98px;
+}
+#buttoncontainer{
+	width:100%;
 }
 #buttoncontainer,#buttoncontainer+div{
 	display: flex;
@@ -131,58 +121,126 @@ placeholder{
 	height:2.5rem;
 	width:50%;
 	background-color:white;
-	border-right: white;
-	border-left: white;
-	border-top: white;
+	border: 1px solid white;
 }
-#basktsll{
+#buttoncontainer button{
+	font-family: IRANSans;
+	font-size: 0.8rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.3rem;
+	text-align: center;
+}
+#buttoncontainer button:first-child{
 	border-bottom:2px solid  #DF3856;
-}
-#basktsll + button{
-	border-bottom:2px solid #DFDFDF;
-}
-#basktsll h5{
 	color:#DF3856;
 }
-#basktsll + button h5{
+#buttoncontainer button:nth-child(2){
+	border-bottom:2px solid #DFDFDF;
 	color:#7D7D7D;
 }
 h5{
 	font-family: IRANSans;
 	font-style: normal;
 }
-#basktsll + button h5,#basktsll h5{
-			font-size:0.875rem;
-			font-weight: bold;
+.informationpro{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding:0.6rem ;
+	border-bottom: 1px solid #E5E5E5;
+	width:100%;
 }
-.tit,#second{
+.informationpro:nth-child(4){
+	border-bottom: 2px solid #EEEEEE;
+}
+.informationpro > h5 {
+	font-family: IRANSans;
+	font-size: 0.8rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.3rem;
+	letter-spacing: 0em;
+	padding-right: 0.6rem;
+}
+.price{
+	width:100%;
+	display: flex;
+	align-items: flex-end;
+	position: relative;
+}
+.price h5{
+	font-size: 0.8rem;
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 400;
+}
+.price h5:first-child{
+	color:#535353;
+	position: absolute;
+	left: 3px;
+	bottom: 15px;
+}
+.price h5:nth-child(2){
+	color: #9D9D9D;
+	margin-right:auto;
+	padding-left: 0.6rem;
+}
+.price h5:nth-child(3){
+	color: #535353;
+	text-align: center;
+}
+.price h5:nth-child(4){
+	color: #535353;
+	text-align: center;
+}
+.buttpro{
+	display: flex;
+	justify-content:space-between;
+	width: 40%;
+}
+.number{
+	border:solid 2px #EEEEEE ;
+	border-radius:6px;
+	padding :0.75rem 0.6rem;
+	display: flex;
+	align-items: center;
+	height: 1.4rem;
+	color:#535353;
+}
+.save{
+	margin-right:auto;
+	align-items: center;
+	text-align: center;
+	color:#7D7D7D;
+	display: flex;
+	border-bottom: 2px dotted #7D7D7D;
+	/* text-decoration: underline dotted #7D7D7D 2px; */
+}
+.tit{
 	display: flex;
 	flex-direction: row;
 	width:100%;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	justify-content:flex-start;
 	background-color: white;
-	padding:0.8rem 1rem;
-}
-.tit{
-	height:275px;
 }
 #second{
-height:200px;
-}
-.tit h5{
-	color:#3E3E3E;
+	display: flex;
+	flex-direction: row;
+	width:100%;
+	background-color: white;
+	flex-wrap: wrap;
 }
 .tit > h5:first-child{
 	width:14%;
-	height: 22px;
+	height:1.3rem;
 	font-family: IRANSans;
-	font-size: 14px;
+	font-size:0.8rem;
 	font-style: normal;
 	font-weight: 400;
 	letter-spacing: 0em;
 	text-align: center;
+	margin-bottom:0.6rem;
 }
 .tit > h5:nth-child(2){
 	width:86%;
@@ -192,13 +250,10 @@ height:200px;
 	height:2.5rem;
 }
 .locinfo{
-	margin-left:auto;
-	width: 85%;
+	padding-right: 10px;
 	display: flex;
-	flex-direction: row;
 	flex-wrap:wrap;
-	height:2rem;
-	
+	height: 3rem;
 }
 .locinfo img{
 	width: 0.6rem;
@@ -222,7 +277,7 @@ height:200px;
 	height: 5.1rem;
 }
 .infoprod,.infoprod div{
-		display: flex;
+	display: flex;
 	flex-direction: row;
 }
 .infoprod{
@@ -236,11 +291,11 @@ height:200px;
 	position: relative;
 	margin-right: auto;
 }
-.infoprod  h5,.infoprod div  h5:first-child,.infoprod div h5:nth-child(2),.infoprod + div div:nth-child(2) h5,.freesend,.sellc h5,.sellc + div h5,#pay2 .freesend h5{
-		font-family: IRANSans;
-		font-size: 0.75rem;
-		font-style: normal;
-		font-weight: 400;
+.infoprod  h5,.infoprod div  h5:first-child,.infoprod div h5:nth-child(2),.infoprod + div div:nth-child(2) h5,.freesend,.sellc h5,.cost h5,#pay2 .freesend h5{
+	font-family: IRANSans;
+	font-size: 0.75rem;
+	font-style: normal;
+	font-weight: 400;
 }
 .infoprod  h5{
 	width: 98%;
@@ -258,9 +313,7 @@ height:200px;
 	display:flex;
 	justify-content: space-between;
 }
-
-.infoprod + div div:nth-child(2){
-	
+.infoprod + div div:nth-child(2){	
 	margin-left: 4.5px;
 	margin-right: 4.5px;
 	height:1.4rem;
@@ -275,65 +328,42 @@ height:200px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	height:1.5rem;
+	width:1.5rem;
+	border-style: none;
+	border-radius:6.25rem;
 	background-color: #EEEEEE;
-	height: 24px;
-	width: 24px;
-	border-radius: 100px;
 }
-.tit > .butt,#second > .butt {
+.tit > .butt {
 	margin-right:4.5%;
 }
-.tit > .butt + h5 ,#second > .butt + h5 {
-	font-family: IRANSans;
-	font-size: 10px;
-	font-style: normal;
-	font-weight: 700;
-	color: #7D7D7D;
-	text-decoration: underline dotted 1px #7D7D7D;
-	margin-right: auto;
-}
-#second,.pay
-{
-	width: 100%;
-	border-top: 0.2rem solid#E5E5E5;
-	padding:0.8rem 1rem;
-	background-color:white;
-}
 .pay{
+	width: 100%;
+	background-color:white;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-	height: 146.51px;
+	flex-direction: column;
 	border-bottom: 3px solid  #E5E5E5;
-	align-items:baseline;
+	padding:0.6rem;
+	align-items: flex-end;
 }
-#second > img{
-	width:5.1rem;
-	height:5.1rem;
-}
-#pe{
-	color:#3E3E3E;
-}
+
 .freesend{
 	width: 100%;
-	background-color: #DFF5F1;
+	background-color:#EEEEEE;
 	display: flex;
 	height: 1.75rem;
 	justify-content: flex-start;
-	padding: 0.3rem 0.5rem;
 	color:#00786C;
+	position: relative;
 }
-.freesend h5 + h5{
+span{
 	font-weight: 800;
-	}
+}
 .butsell{
-	display: flex;
 	justify-content: flex-end;
-	padding: 0.5rem 0rem;
-	height:2rem;
+	padding-top: 0.5rem ;
 	background-color:white;
-	width: 100%;
+	width:35%;
 }
 .butsell h5{
 	display: flex;
@@ -347,59 +377,91 @@ height:200px;
 	font-weight: 700;
 	background-color:#EEEEEE;
 	border-radius:6.25rem;
+	justify-content: center;
 }
 .sellc{
 	background-color:  #DF3856;
 	height:2rem;
 	border-radius: 6.25rem;
-	padding: 0.25rem 0.6rem;
+	align-items: center;
+	display: flex;
+	padding: 0rem 1rem;
 }
 .sellc h5{
 	color:white;
 }
-.sellc + div{
-	margin-right: auto;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-.sellc + div h5:first-child{
+.cost h5:first-child{
 	color: #535353;
 }
-.sellc + div h5:nth-child(2){
+.cost h5:nth-child(2){
 	text-align: left;
 }
-.sellc + div h5:nth-child(3){
-	position: absolute;
-	top:10px;
-	left:2px;
+.pay:nth-child(3) {
+	height:6.8rem;
 }
-#pay2{
-	height: 7.3rem;
-}
-#pay2 + div{
-	width: 100%;
-	height: 117.38px;
-	background-color: #E5E5E5;
-}
-#pay2 .freesend {
-	background-color: #E5E5E5;
-	padding: 0px ;
-}
-#pay2 .freesend h5{
+.pay:nth-child(3) .freesend  h5{
 	display: flex;
 	align-items: center;
 	line-height:1.1rem;
 	letter-spacing: 0rem;
 	text-align: right;
-	}
-#pay2 .freesend  h5:first-child{
+}
+.pay:nth-child(3) .freesend  h5:first-child{
 	background-color:#DFF5F1;
-	}
-#pay2 .freesend  h5:nth-child(2){
+}
+.pay:nth-child(3) .freesend   h5:nth-child(2){
 	color: #3E3E3E;
-	}
-#pay3{
-		height: 75px;
-	}
+}
+.butt:focus {
+	outline: none;
+}
+.infree{
+	display: flex;
+	background-color: #DFF5F1;	
+	padding: 0.3rem 0.5rem;	
+	border-radius: 3px;
+}
+.sellinfo{
+	display: flex;
+	padding-top: 1.25rem;
+	width: 100%;
+	justify-content: space-between;
+}
+.userinfo{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding:0.6rem 0.6rem;
+}
+.name{
+	display: flex;
+	width: 100%;
+	padding-bottom: 7px;
+}
+.button{
+	display: flex;
+	width: 70%;
+	justify-content: space-between;
+	align-items: center;
+}
+.text{
+	position: absolute;
+}
+.text span{
+	font-family: IRANSans;
+	font-size:0.75rem;
+	font-style: normal;
+	font-weight: 400;
+	text-align: right;
+}
+.pay2{
+	justify-content: center;
+}
+.ccash{
+	padding:20px 30px ;
+}
+h5{
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 400;
+}
